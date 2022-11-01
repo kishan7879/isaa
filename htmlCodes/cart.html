@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+    <script src="https://kit.fontawesome.com/a534ac56a5.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/logo2.jpg">
+    <!-- <script src="cart.js"></script> -->
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="nav1 fixed-top">
+        <ul class="float-right nav">
+            <li class="nav-item"><a class="nav2-right-content nav-link" href="SignUp.html"
+                    style="margin-right: 0;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li class="nav-item"><a class="nav2-right-content nav-link" href="cart.html" style="margin-left: 0;"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+        <ul class="d-flex justify-content-center nav">
+            <a href="home.html">
+            <li><img src="images/paynateLogoNav.jpg" alt="Logo" width="100px" style="margin: 5px 0px 10px 200px;"></li>
+            </a>
+        </ul>
+    </div>
+    <main style="margin-bottom:50px">
+        <div class="basket">
+            <br>
+            <h2 style="margin-top: 80px;">Shopping Cart</h2>
+            <div class="basket-labels">
+                <ul class="ul-cart">
+                    <li class="item item-heading li-cart">Item</li>
+                    <li class="price li-cart">Price</li>
+                    <li class="quantity li-cart">Quantity</li>
+                    <li class="subtotal li-cart">Subtotal</li>
+                </ul>
+            </div>
+            
+            <div class="basket-product">
+                <div class="item">
+                    <div class="product-image">
+                        <img src="images/dreamCatcher-2.jpeg" alt="Placholder Image 2" class="product-frame image-cart">
+                    </div>
+                    <div class="product-details">
+                        <h1 class="heading-one"><strong><span class="item-quantity">1</span> x Dream Catcher</strong></h1>
+                        <p>Pink, Size 10</p>
+                        <p>Product Code - 232321939</p>
+                    </div>
+                </div>
+                <div class="price">100.00</div>
+                <div class="quantity">
+                    <input type="number" value="1" min="1" class="quantity-field">
+                </div>
+                <div class="subtotal">100.00</div>
+                <div class="remove">
+                    <button>Remove</button>
+                </div>
+            </div>
+            <div class="basket-product">
+                <div class="item">
+                    <div class="product-image">
+                        <a href="product.html">
+                            <img src="images/painting-4.jpeg" alt="Sun Painting" class="product-frame image-cart">
+                        </a>
+                    </div>
+                    <div class="product-details">
+                        <h1 class="heading-one"><strong><span class="item-quantity">1</span> x Painting</strong></h1>
+                        <p>Acrylic, 180g</p>
+                        <p>Product Code - 232321939</p>
+                    </div>
+                </div>
+                <div class="price">170.00</div>
+                <div class="quantity">
+                    <input type="number" value="1" min="1" class="quantity-field">
+                </div>
+                <div class="subtotal">170.00</div>
+                <div class="remove">
+                    <button>Remove</button>
+                </div>
+            </div>
+            <!-- <div class="basket-product">
+                <div class="item">
+                    <div class="product-image">
+                        <img src="images/painting-4.jpeg" alt="Placholder Image 2" class="product-frame image-cart">
+                    </div>
+                    <div class="product-details">
+                        <h1 class="heading-one"><strong><span class="item-quantity">1</span> x Matt Pink Painting</strong></h1>
+                        <p>Acrylic, Size A5</p>
+                        <p>Product Code - 2323215634</p>
+                    </div>
+                </div>
+                <div class="price">300.00</div>
+                <div class="quantity">
+                    <input type="number" value="1" min="1" class="quantity-field">
+                </div>
+                <div class="subtotal">300.00</div>
+                <div class="remove">
+                    <button>Remove</button>
+                </div>
+            </div> -->
+        </div>
+        <aside>
+            <div class="summary" style="margin-top: 80px;">
+                <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+                <div class="summary-subtotal">
+                    <div class="subtotal-title">Subtotal</div>
+                    <div class="subtotal-value final-value" id="basket-subtotal">270.00</div>
+                </div>
+                <div class="summary-delivery">
+                    <select name="delivery-collection" class="summary-delivery-selection">
+                        <option value="0" selected="selected">Select the charity you want to donate to</option>
+                        <option value="collection">Akankasha Foundation</option>
+                        <option value="first-class">Akshaya Patra</option>                                                                                           
+                        <option value="second-class">Annamrita Foundation</option>
+                        <option value="signed-for">Give India Organisation</option>
+                    </select>
+                </div>
+                <div class="summary-total">
+                    <div class="total-title">Total</div>
+                    <div class="total-value final-value" id="basket-total">270.00</div>
+                </div>
+                <div class="summary-checkout">
+                    <a href="payment.html">
+                        <button type="submit" class="button-cart" style="margin-top: 10px;">GO TO SECURE CHECKOUT</button>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="images/paynateLogo.jpg" class="logo" alt="">
+            <div class="footer-ul-container">
+                <ul class="category">
+                    <li class="category-title">Categories</li>
+                    <li><a href="#" class="footer-link">Candles</a></li>
+                    <li><a href="#" class="footer-link">Paintings</a></li>
+                    <li><a href="#" class="footer-link">Dream
+                            Catchers</a></li>
+                    <li><a href="#" class="footer-link">Tie-Die Tees</a></li>
+                    <li><a href="#" class="footer-link">Accessories</a></li>
+                    <li><a href="#" class="footer-link">Pottery</a></li>
+                </ul>
+                <ul class="category">
+                    <li class="category-title">Information</li>
+                    <li>
+                        <a href="#" class="footer-link">About Us </a>
+                    </li>
+                    <li><a href="#" class="footer-link">Terms &
+                            Conditions</a></li>
+                    <li><a href="#" class="footer-link">Return &
+                            Exchange</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">Shipping &
+                            Delivery</a></li>
+                    <li><a href="#" class="footer-link">Privacy
+                            Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-title">about company</p>
+        <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Repellat tempore ad suscipit, eos eius
+            quisquam sed optio nisi quaerat fugiat ratione et vero maxime
+            praesentium, architecto minima reiciendis iste
+            quo deserunt assumenda alias ducimus. Ullam odit maxime id
+            voluptates rerum tenetur corporis laboriosam! Cum
+            error ipsum laborum tempore in rerum necessitatibus nostrum nobis
+            modi! Debitis adipisci illum nemo aperiam
+            sed, et accusamus ut officiis.
+        </p>
+        <p class="info">support emails - help@paynate.com,
+            customersupport@paynate.com</p>
+        <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
+        <div class="footer-social-container">
+            <div>
+                <a href="#" class="social-link">terms & services</a>
+                <a href="#" class="social-link">privacy page</a>
+            </div>
+            <div>
+                <a href="#" class="social-link">instagram</a>
+                <a href="#" class="social-link">facebook</a>
+                <a href="#" class="social-link">twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    /* Set values + misc */
+    var promoCode;
+    var promoPrice;
+    var fadeTime = 300;
+
+    /* Assign actions */
+    $('.quantity input').change(function () {
+        updateQuantity(this);
+    });
+
+    $('.remove button').click(function () {
+        removeItem(this);
+    });
+
+    $(document).ready(function () {
+        updateSumItems();
+    });
+
+    $('.promo-code-cta').click(function () {
+
+        promoCode = $('#promo-code').val();
+
+        if (promoCode == '10off' || promoCode == '10OFF') {
+            //If promoPrice has no value, set it as 10 for the 10OFF promocode
+            if (!promoPrice) {
+                promoPrice = 10;
+            } else if (promoCode) {
+                promoPrice = promoPrice * 1;
+            }
+        } else if (promoCode != '') {
+            alert("Invalid Promo Code");
+            promoPrice = 0;
+        }
+        //If there is a promoPrice that has been set (it means there is a valid promoCode input) show promo
+        if (promoPrice) {
+            $('.summary-promo').removeClass('hide');
+            $('.promo-value').text(promoPrice.toFixed(2));
+            recalculateCart(true);
+        }
+    });
+
+    /* Recalculate cart */
+    function recalculateCart(onlyTotal) {
+        var subtotal = 0;
+
+        /* Sum up row totals */
+        $('.basket-product').each(function () {
+            subtotal += parseFloat($(this).children('.subtotal').text());
+        });
+
+        /* Calculate totals */
+        var total = subtotal;
+
+        //If there is a valid promoCode, and subtotal < 10 subtract from total
+        var promoPrice = parseFloat($('.promo-value').text());
+        if (promoPrice) {
+            if (subtotal >= 10) {
+                total -= promoPrice;
+            } else {
+                alert('Order must be more than £10 for Promo code to apply.');
+                $('.summary-promo').addClass('hide');
+            }
+        }
+
+        /*If switch for update only total, update only total display*/
+        if (onlyTotal) {
+            /* Update total display */
+            $('.total-value').fadeOut(fadeTime, function () {
+                $('#basket-total').html(total.toFixed(2));
+                $('.total-value').fadeIn(fadeTime);
+            });
+        } else {
+            /* Update summary display. */
+            $('.final-value').fadeOut(fadeTime, function () {
+                $('#basket-subtotal').html(subtotal.toFixed(2));
+                $('#basket-total').html(total.toFixed(2));
+                if (total == 0) {
+                    $('.checkout-cta').fadeOut(fadeTime);
+                } else {
+                    $('.checkout-cta').fadeIn(fadeTime);
+                }
+                $('.final-value').fadeIn(fadeTime);
+            });
+        }
+    }
+
+    /* Update quantity */
+    function updateQuantity(quantityInput) {
+        /* Calculate line price */
+        var productRow = $(quantityInput).parent().parent();
+        var price = parseFloat(productRow.children('.price').text());
+        var quantity = $(quantityInput).val();
+        var linePrice = price * quantity;
+
+        /* Update line price display and recalc cart totals */
+        productRow.children('.subtotal').each(function () {
+            $(this).fadeOut(fadeTime, function () {
+                $(this).text(linePrice.toFixed(2));
+                recalculateCart();
+                $(this).fadeIn(fadeTime);
+            });
+        });
+
+        productRow.find('.item-quantity').text(quantity);
+        updateSumItems();
+    }
+
+    function updateSumItems() {
+        var sumItems = 0;
+        $('.quantity input').each(function () {
+            sumItems += parseInt($(this).val());
+        });
+        $('.total-items').text(sumItems);
+    }
+
+    /* Remove item from cart */
+    function removeItem(removeButton) {
+        /* Remove row from DOM and recalc cart total */
+        var productRow = $(removeButton).parent().parent();
+        productRow.slideUp(fadeTime, function () {
+            productRow.remove();
+            recalculateCart();
+            updateSumItems();
+        });
+    }
+</script>

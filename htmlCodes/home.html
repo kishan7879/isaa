@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paynate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/logo2.jpg">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    
+    <style>
+        .charity-thumbnails{
+            border-radius: 0;
+            background-color: #fbfbfb;
+            border-color: white;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".nav2" data-offset="50">
+
+
+    <div class="nav1 fixed-top">
+        <ul class="float-right nav">
+            <li class="nav-item"><a class="nav2-right-content nav-link" href="SignUp.html" style="margin-right: 0;"><span
+                        class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li class="nav-item"><a class="nav2-right-content nav-link" href="cart.html" style="margin-left: 0;"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+        <ul class="d-flex justify-content-center nav">
+            <a href="#">
+            <li><img src="images/paynateLogoNav.jpg" alt="Logo" width="100px" style="margin: 5px 0px 10px 200px;"></li>
+            </a>
+        </ul>
+    </div>
+    <div class="nav2 fixed-top">
+        <ul class="nav justify-content-center bg-white">
+            <li class="nav-item">
+                <a class="nav-link text-dark nav2-links" href="#section1">Latest Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark nav2-links" href="#section2">Bestsellers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark nav2-links" href="#section3">Charity Organizations</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="demo" class="carousel slide pointer-event" data-ride="carousel" style="margin-top: 100px;">
+        <ol class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/image1_carousel.jpg" alt="Los Angeles" width="100%" height="630px">
+                <div class="carousel-caption">
+                    <h3>Pay and Donate</h3>
+                    <p id="section1">Online interface to donate through..</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image2_carousel.jpg" alt="Chicago" width="100%" height="630px">
+                <div class="carousel-caption">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image3_carousel.jpg" alt="New York" width="100%" height="630px">
+                <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!-- <div id="section1">
+        <h1 style="color:#fff">.</h1> <br>
+    </div> -->
+    <div class="container" style="margin-top: 30px;">
+        <div id="demo1" class="container carousel slide" data-interval="false">
+            <div class="carousel-inner">
+                <h2 style="font-weight: 300;">LATEST PRODUCTS</h2>
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="product.html" target="_blank">
+                                    <img src="images/painting-4.jpeg" alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p id="section2">Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-2.jpeg" target="_blank">
+                                    <img src="images/latest-2.jpeg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-4.jpeg" target="_blank">
+                                    <img src="images/latest-4.jpeg" alt="Fjords" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/painting-4.jpeg" target="_blank">
+                                    <img src="images/painting-4.jpeg" alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-2.jpeg" target="_blank">
+                                    <img src="images/latest-2.jpeg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-4.jpeg" target="_blank">
+                                    <img src="images/latest-4.jpeg" alt="Fjords" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/painting-4.jpeg" target="_blank">
+                                    <img src="images/painting-4.jpeg" alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-2.jpeg" target="_blank">
+                                    <img src="images/latest-2.jpeg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-4.jpeg" target="_blank">
+                                    <img src="images/latest-4.jpeg" alt="Fjords" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo1" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="demo2" class="container carousel slide" data-interval="false">
+            <div class="carousel-inner">
+                <h2 style="font-weight: 300;">BESTSELLERS</h2>
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/painting-4.jpeg" target="_blank">
+                                    <img src="images/painting-4.jpeg" alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p id="section3">Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-2.jpeg" target="_blank">
+                                    <img src="images/latest-2.jpeg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-4.jpeg" target="_blank">
+                                    <img src="images/latest-4.jpeg" alt="Fjords" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/painting-4.jpeg" target="_blank">
+                                    <img src="images/painting-4.jpeg" alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-2.jpeg" target="_blank">
+                                    <img src="images/latest-2.jpeg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-4.jpeg" target="_blank">
+                                    <img src="images/latest-4.jpeg" alt="Fjords" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/painting-4.jpeg" target="_blank">
+                                    <img src="images/painting-4.jpeg" alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-2.jpeg" target="_blank">
+                                    <img src="images/latest-2.jpeg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-4.jpeg" target="_blank">
+                                    <img src="images/latest-4.jpeg" alt="Fjords" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo2" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid" style="background-color: #f7f7f7;">
+    <div class="container">
+        <div id="demo3" class="container carousel slide" data-interval="false">
+            <div class="carousel-inner">
+                <h2 style="font-weight: 300;">CHARITY ORGANIZATIONS</h2> 
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="charity-thumbnails">
+                                <a href="images/painting-4.jpeg" target="_blank">
+                                    <img src="https://www.smile-ngo.org/wp-content/uploads/2018/06/udaan-home.jpg" alt="Lights" style="width:100%">
+                                    <div class="carousel-caption">
+                                        <h3>Smile Foundation</h3> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="thumbnail charity-thumbnails">
+                                <a href="images/latest-2.jpeg" target="_blank">
+                                    <img src="images/nanhi_kali_image.jpg" alt="Nature" style="width:100%">
+                                    <div class="carousel-caption">
+                                        <h3>Nanhi Kali</h3> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="charity-thumbnails">
+                                <a href="images/painting-4.jpeg" target="_blank">
+                                    <img src="https://www.smile-ngo.org/wp-content/uploads/2018/06/udaan-home.jpg" alt="Lights" style="width:100%">
+                                    <div class="carousel-caption">
+                                        <h3>Smile Foundation</h3> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="thumbnail charity-thumbnails">
+                                <a href="images/latest-2.jpeg" target="_blank">
+                                    <img src="images/nanhi_kali_image.jpg" alt="Nature" style="width:100%">
+                                    <div class="carousel-caption">
+                                        <h3>Nanhi Kali</h3> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/painting-4.jpeg" target="_blank">
+                                    <img src="images/painting-4.jpeg" alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-2.jpeg" target="_blank">
+                                    <img src="images/latest-2.jpeg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="images/latest-4.jpeg" target="_blank">
+                                    <img src="images/latest-4.jpeg" alt="Fjords" style="width:100%">
+                                    <div class="caption">
+                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo3" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <img src="images/paynateLogo.jpg" class="logo" alt="">
+            <div class="footer-ul-container">
+                <ul class="category">
+                    <li class="category-title">Categories</li>
+                    <li><a href="#" class="footer-link">Candles</a></li>
+                    <li><a href="#" class="footer-link">Paintings</a></li>
+                    <li><a href="#" class="footer-link">Dream
+                            Catchers</a></li>
+                    <li><a href="#" class="footer-link">Tie-Die Tees</a></li>
+                    <li><a href="#" class="footer-link">Accessories</a></li>
+                    <li><a href="productPage2.html" class="footer-link">All Products</a></li>
+                </ul>
+                <ul class="category">
+                    <li class="category-title">Information</li>
+                    <li>
+                        <a href="#" class="footer-link">About Us </a>
+                    </li>
+                    <li><a href="#" class="footer-link">Terms &
+                            Conditions</a></li>
+                    <li><a href="#" class="footer-link">Return &
+                            Exchange</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">Shipping &
+                            Delivery</a></li>
+                    <li><a href="#" class="footer-link">Privacy
+                            Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-title">about company</p>
+        <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Repellat tempore ad suscipit, eos eius
+            quisquam sed optio nisi quaerat fugiat ratione et vero maxime
+            praesentium, architecto minima reiciendis iste
+            quo deserunt assumenda alias ducimus. Ullam odit maxime id
+            voluptates rerum tenetur corporis laboriosam! Cum
+            error ipsum laborum tempore in rerum necessitatibus nostrum nobis
+            modi! Debitis adipisci illum nemo aperiam
+            sed, et accusamus ut officiis.
+        </p>
+        <p class="info">support emails - help@paynate.com,
+            customersupport@paynate.com</p>
+        <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
+        <div class="footer-social-container">
+            <div>
+                <a href="#" class="social-link">terms & services</a>
+                <a href="#" class="social-link">privacy page</a>
+            </div>
+            <div>
+                <a href="#" class="social-link">instagram</a>
+                <a href="#" class="social-link">facebook</a>
+                <a href="#" class="social-link">twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

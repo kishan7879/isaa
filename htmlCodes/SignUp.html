@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayNate | Sign Up</title>
+    <link rel="shortcut icon" href="images/logo2.jpg">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/SignUp.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="nav1 fixed-top">
+        <ul class="float-right nav">
+            <li class="nav-item"><a class="nav2-right-content nav-link" href="SignUp.html"
+                    style="margin-right: 0;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li class="nav-item"><a class="nav2-right-content nav-link" href="cart.html" style="margin-left: 0;"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+        <ul class="d-flex justify-content-center nav">
+            <a href="home.html">
+                <li><img src="images/paynateLogoNav.jpg" alt="Logo" width="100px" style="margin: 5px 0px 10px 200px;">
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div ng-app="mainApp" ng-controller="formController">
+        <div style="background-color: #f7f7f7;">
+            <div class="container container-signup" style="margin-top: 80px;margin-bottom: 20px; ">
+                <div style="margin-left: 40%; margin-top: 40px;">
+                    <form name="signupform" action="/SignUp" method="POST" >
+                        <h1>Sign Up</h1> <br>
+
+                        <input type="text" autocomplete="off" name="Name" id="name" placeholder="Enter your name"
+                            ng-model="Name" required>
+                        <span style="color: red; font-size: smaller;"
+                            ng-show="signupform.Name.$dirty && signupform.Name.$invalid">
+                            <span ng-show="signupform.Name.$error.required">&#9888; Name is required.</span>
+                        </span>
+
+                        <input type="email" autocomplete="off" id="email" placeholder="Enter your email"
+                            ng-model="email" name="email" required>
+                        <span style="color:red; font-size: smaller;"
+                            ng-show="signupform.email.$dirty && signupform.email.$invalid">
+                            <span ng-show="signupform.email.$error.required">&#9888; Email is required.</span>
+                            <span ng-show="signupform.email.$error.email">&#9888; Invalid email address.</span>
+                        </span>
+
+                        <input type="password" autocomplete="off" id="password" placeholder="Enter your password"
+                            required ng-model="password" name="password" ng-minlength="7">
+                        <span style="color:red; font-size: smaller; margin-bottom: 10px;"
+                            ng-show="signupform.password.$dirty && signupform.password.$invalid">
+                            <span ng-show="signupform.password.$error.required">&#9888; Password is required.</span>
+                            <span ng-show="signupform.password.$error.minlength">&#9888; Minimum 7 characters
+                                required.</span>
+                            <br>
+                        </span>
+
+                        <input type="number" autocomplete="off" id="number" placeholder="Enter your number"
+                            ng-model="number" name="number" ng-maxlength="10" ng-minlength="10" required>
+                        <span style="color:red; font-size: smaller; margin-bottom: 10px;"
+                            ng-show="signupform.number.$dirty && signupform.number.$invalid">
+                            <span ng-show="signupform.number.$error.required">&#9888; Mobile number is required.</span>
+                            <span
+                                ng-show="signupform.number.$error.maxlength || signupform.number.$error.minlength">&#9888;
+                                Invalid Mobile number.</span>
+                            <br>
+                        </span>
+                        <br>
+                        <p class="checkbox-p">
+                            <input type="checkbox" name="terms-and-condns" class="checkbox-signup"> Agree to our terms
+                            and conditions <br>
+                            <input type="checkbox" name="email-notifs" class="checkbox-signup"> Recieve upcoming offers
+                            and events mails <br>
+                        </p>
+                        <a href="home.html">
+                            <button class="button-signup" name="signupbtn" 
+                                >CREATE ACCOUNT</button>
+                        </a>
+                        <a href="LogIn.html" class="link" style="margin-bottom: 80px;">already have an account? Log in
+                            here</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <img src="images/paynateLogo.jpg" class="logo" alt="">
+            <div class="footer-ul-container">
+                <ul class="category">
+                    <li class="category-title">Categories</li>
+                    <li><a href="#" class="footer-link">Candles</a></li>
+                    <li><a href="#" class="footer-link">Paintings</a></li>
+                    <li><a href="#" class="footer-link">Dream
+                            Catchers</a></li>
+                    <li><a href="#" class="footer-link">Tie-Die Tees</a></li>
+                    <li><a href="#" class="footer-link">Accessories</a></li>
+                    <li><a href="#" class="footer-link">Pottery</a></li>
+                </ul>
+                <ul class="category">
+                    <li class="category-title">Information</li>
+                    <li>
+                        <a href="#" class="footer-link">About Us </a>
+                    </li>
+                    <li><a href="#" class="footer-link">Terms &
+                            Conditions</a></li>
+                    <li><a href="#" class="footer-link">Return &
+                            Exchange</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">Shipping &
+                            Delivery</a></li>
+                    <li><a href="#" class="footer-link">Privacy
+                            Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-title">about company</p>
+        <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Repellat tempore ad suscipit, eos eius
+            quisquam sed optio nisi quaerat fugiat ratione et vero maxime
+            praesentium, architecto minima reiciendis iste
+            quo deserunt assumenda alias ducimus. Ullam odit maxime id
+            voluptates rerum tenetur corporis laboriosam! Cum
+            error ipsum laborum tempore in rerum necessitatibus nostrum nobis
+            modi! Debitis adipisci illum nemo aperiam
+            sed, et accusamus ut officiis.
+        </p>
+        <p class="info">support emails - help@paynate.com,
+            customersupport@paynate.com</p>
+        <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
+        <div class="footer-social-container">
+            <div>
+                <a href="#" class="social-link">terms & services</a>
+                <a href="#" class="social-link">privacy page</a>
+            </div>
+            <div>
+                <a href="#" class="social-link">instagram</a>
+                <a href="#" class="social-link">facebook</a>
+                <a href="#" class="social-link">twitter</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var mainApp = angular.module("mainApp", []);
+        mainApp.controller('formController', function ($scope) {
+            // var name = $scope.Name;
+            // var email = $scope.email;
+            // var password = $scope.password;
+            // var number = $scope.number;
+            // var signupform = $scope.signupform;
+            // // $scope.color = "grey" ;
+            // $scope.signupvalidation = function () {
+            //     if ((signupform.Name.$dirty && signupform.Name.$invalid) || (signupform.number.$dirty && signupform.number.$invalid) || (signupform.email.$dirty && signupform.email.$invalid) || (signupform.password.$dirty && signupform.password.$invalid) || signupform.Name.$pristine || signupform.number.$pristine || signupform.email.$pristine || signupform.password.$pristine) {
+            //         return true;
+            //     }
+
+            //     else {
+            //         return false;
+            //     }
+            // };
+
+        });
+    </script>
+</body>
+
+</html>

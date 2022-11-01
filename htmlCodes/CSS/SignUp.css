@@ -1,0 +1,93 @@
+.container-signup {
+  background-color: #f7f7f7;
+}
+body{
+    background-color: #f7f7f7;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"], 
+input[type="number"],
+textarea {
+  display: block;
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  /* border-radius: 5px; */
+  background: #fff;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  /* text-transform: capitalize; */
+  /* color: #383838; */
+  font-size: 14px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01); */
+  color: black;
+}
+
+::placeholder {
+  color: #777777;
+}
+
+.button-signup {
+  border-style: none;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding: 15px;
+  width: 200px;
+  margin: 25px 0px 20px 50px;
+}
+
+.button-signup:hover {
+  background-color: grey;
+  border: 1px solid black;
+  color: black;
+  font-weight: 500;
+  width: 200px;
+}
+
+.checkbox-signup :checked{
+  background: black;
+}
+
+.checkbox-p{
+    font-size: 14px;
+    font-weight: 600;
+}
+/* .checkbox{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #383838;
+    cursor: pointer;
+} */
+
+/* .checkbox:checked::after{
+    display: block;
+} */
+
+label {
+  /* text-transform: capitalize; */
+  /* display: inline-block; */
+  /* margin-bottom: 10px;
+    font-size: 14px;
+    color: #383838; */
+}
+
+label a {
+  color: #383838;
+}
+
+.link {
+  color: #383838;
+  text-transform: capitalize;
+  display: block;
+  margin-left: 20px;
+}
+.link:hover {
+  color: #000000;
+  font-weight: 500;
+}
